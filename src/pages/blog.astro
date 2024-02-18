@@ -1,5 +1,5 @@
 ---
-
+const blogTitle = 'Blog';
 ---
 
 <html lang="en">
@@ -12,13 +12,12 @@
   </head>
   <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About Me</a>
-        <a href="/blog/">Blog</a>
+      <a href="/">Home</a>
+      <a href="/about/">About Me</a>
+      <a href="/blog/">Blog</a>
     </nav>
 
-
-    <h1>Blog</h1>
+    <h1>{blogTitle}</h1>
     <h2>I write about topics I wish to hear more about.</h2>
 
     <p>
@@ -26,9 +25,10 @@
       page on my website, and it's the first one I built myself!
     </p>
 
-    <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
-    </p>
+    <ul>
+      <li>
+        <a href="/posts/full-stack-foundations/"> Full Stack Foundations</a>
+      </li>
+    </ul>
   </body>
 </html>
