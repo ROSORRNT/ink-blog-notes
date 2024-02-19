@@ -1,0 +1,15 @@
+---
+const { platform, extension, displayName } = Astro.props
+---
+
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+  }
+</style>
+
+<a class="bg-mardi-gras-950 hover:text-blue-100 rounded-sm" href={`https://www.${platform}.${extension}`} target="_blank" rel="noopener noreferrer"
+  >{displayName}</a
+>

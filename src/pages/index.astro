@@ -1,6 +1,11 @@
 ---
-import '@/styles/globals.css'
-import {Button} from "@/components/ui/button"
+import "@/styles/globals.css"
+import Footer from "@/components/Footer.astro"
+import TopNavigation from "@/components/TopNavigation.astro"
+import CoursesNavigation from "@/components/CoursesNavigation"
+import { ewdCourses } from "../data/data"
+import { femCourses } from "../data/data"
+import { eggCourses } from "../data/data"
 ---
 
 <html lang="en">
@@ -12,14 +17,26 @@ import {Button} from "@/components/ui/button"
     <title>Ink Notes</title>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about/">About Me</a>
-      <a href="/blog/">Blog</a>
-    </nav>
+    <TopNavigation />
+    <h1 class="px-8">Journal d'Apprentissage</h1>
 
-    <Button variant="destructive" >Hello World</Button>
+    <main class="mx-32">
+      <div class="flex justify-center">
+        <CoursesNavigation
+          client:load
+          courses={ewdCourses}
+          title="Epic Web Dev"
+        />
+        <CoursesNavigation
+          client:load
+          courses={femCourses}
+          title="Frontend Masters"
+        />
+        <CoursesNavigation client:load courses={eggCourses} title="Egghead" />
+      </div>
+    </main>
+    <!-- <Button variant="destructive" >Hello World</Button> -->
 
-    <h1>Astro website</h1>
+    <Footer />
   </body>
 </html>
