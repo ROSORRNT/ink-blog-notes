@@ -26,11 +26,7 @@ export default function CoursesNavigation({ courses, title }: { courses: Course[
           <NavigationMenuContent>
 
             {courses.map((course) => (
-              <NavigationMenuItem key={course.title} className="hover:bg-chinook-50
-               px-4
-               py-2
-               block
-             ">
+              <NavigationMenuItem key={course.title} className="hover:bg-chinook-50 px-4 py-2 block">
                 {
                   course.href !== undefined ? (
                     <NavigationMenuLink href={course.href}>{course.title}</NavigationMenuLink>

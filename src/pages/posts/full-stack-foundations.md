@@ -10,8 +10,6 @@ tags: ["astro", "blogging", "learning in public"]
 ---
 # Full Stack Foundations
 
-Published on: 2024-02-018
-
 [Home](/)
 [About Me](/about)
 [Blog](/blog)
@@ -26,4 +24,3 @@ Published on: 2024-02-018
 5. [Scripting](/posts/full-stack-foundations/scripting)
 6. [Search Engine Optimisation](/posts/full-stack-foundations/seo)
 7. [Error Handling](/posts/full-stack-foundations/error-handling)
-s
