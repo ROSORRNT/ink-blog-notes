@@ -3,7 +3,33 @@
 @tailwind utilities;
 
 html {
-  background-color: #f1f5f9;
+  background-image: linear-gradient(
+    5deg,
+    hsl(300deg 100% 10%) 0%,
+    hsl(300deg 49% 16%) 3%,
+    hsl(298deg 29% 22%) 5%,
+    hsl(294deg 18% 28%) 8%,
+    hsl(286deg 11% 34%) 11%,
+    hsl(268deg 6% 40%) 14%,
+    hsl(217deg 4% 45%) 17%,
+    hsl(177deg 6% 50%) 20%,
+    hsl(161deg 11% 55%) 23%,
+    hsl(155deg 19% 61%) 27%,
+    hsl(152deg 29% 66%) 30%,
+    hsl(150deg 44% 72%) 34%,
+    hsl(142deg 44% 75%) 37%,
+    hsl(130deg 43% 77%) 41%,
+    hsl(116deg 44% 80%) 45%,
+    hsl(104deg 50% 80%) 49%,
+    hsl(94deg 56% 80%) 54%,
+    hsl(85deg 63% 81%) 58%,
+    hsl(79deg 70% 81%) 63%,
+    hsl(73deg 77% 82%) 69%,
+    hsl(68deg 84% 82%) 75%,
+    hsl(64deg 92% 82%) 82%,
+    hsl(60deg 100% 83%) 92%
+  );
+  min-height: 100vh;
   font-family: sans-serif;
 }
 
@@ -11,8 +37,10 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 80ch;
-  padding: 1rem;
+  padding-bottom: 1rem ;
   line-height: 1.5;
+  opacity: 0.9;
+  min-height: 100vh;
 }
 
 * {
