@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/react": "^3.0.10",
     "@astrojs/tailwind": "^5.1.0",
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
