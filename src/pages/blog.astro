@@ -1,10 +1,7 @@
 ---
-import '@/styles/globals.css'
-import TopNavigation from '@/components/TopNavigation.astro'
-import Footer from '@/components/Footer.astro';
-
-
-const blogTitle = "Blog"
+import "@/styles/globals.css"
+import TopNavigation from "@/components/TopNavigation.astro"
+import Footer from "@/components/Footer.astro"
 ---
 
 <html lang="en">
@@ -17,20 +14,10 @@ const blogTitle = "Blog"
   </head>
   <body>
     <TopNavigation />
-
-    <h1>{blogTitle}</h1>
-    <h2>I write about topics I wish to hear more about.</h2>
-
-    <p>
-      I am working through Astro's introductory tutorial. This is the second
-      page on my website, and it's the first one I built myself!
-    </p>
-
-    <ul>
-      <li>
-        <a href="/posts/full-stack-foundations/"> Full Stack Foundations</a>
-      </li>
-    </ul>
+    <div class="mx-32">
+      <h1>Blog</h1>
+      <h2>I write about topics I wish to hear more about.</h2>
+    </div>
     <Footer />
   </body>
 </html>
