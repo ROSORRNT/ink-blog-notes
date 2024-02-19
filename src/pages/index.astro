@@ -20,7 +20,10 @@ import { eggCourses } from "../data/data"
     <TopNavigation />
     <h1 class="px-8">Journal d'Apprentissage</h1>
 
-    <main class="mx-32">
+    <main class="flex flex-col h-[50vh] justify-between">
+      <h2>
+        <span class="px-8">Ressources principales</span>
+      </h2>
       <div class="flex justify-center">
         <CoursesNavigation
           client:load
@@ -32,11 +35,12 @@ import { eggCourses } from "../data/data"
           courses={femCourses}
           title="Frontend Masters"
         />
-        <CoursesNavigation client:load courses={eggCourses} title="Egghead" />
+        <CoursesNavigation client:load courses={eggCourses} title="Egghead.io" />
       </div>
-    </main>
-    <!-- <Button variant="destructive" >Hello World</Button> -->
 
-    <Footer />
+      <!-- <Button variant="destructive" >Hello World</Button> -->
+
+      <Footer />
+    </main>
   </body>
 </html>
