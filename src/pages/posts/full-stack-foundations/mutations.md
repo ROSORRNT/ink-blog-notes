@@ -53,10 +53,6 @@ sur mon serveur pour gérer/manipuler, mutate this data
 This would make a request to `/make-a-sandwich` instead of `/sandwiches` donc sur la route qui make a thing with the data submitted, autrement dit un handler sur ton server, un controller 
 
 ### The back button
-![clipboard.png](CEZoJdj4b-clipboard.png)
-
-
-
 
 1. **Soumission de Formulaire :** Lorsque vous remplissez et envoyez un formulaire sur un site web (par exemple, une transaction bancaire ou l'achat d'un billet d'avion), le navigateur envoie ces informations au serveur.
 2. **Réponse du Serveur :** Normalement, le serveur répond en renvoyant une page web (HTML). Cependant, **si le serveur répond avec une page HTML après une soumission réussie, cela peut causer des problèmes.**
@@ -68,7 +64,6 @@ This would make a request to `/make-a-sandwich` instead of `/sandwiches` donc su
    - **Redirect :** Le serveur répond non pas avec une page HTML, mais avec une instruction de redirection vers une autre page.
    - **Get :** Le navigateur charge la nouvelle page.*
    
-   ![clipboard.png](QKp4RprGf-clipboard.png)
 Ainsi, si vous appuyez sur le bouton "retour" après cette opération, vous ne resoumettez pas le formulaire, car la dernière action était une simple requête de page (Get), et non une soumission de formulaire (Post).
 
 
@@ -216,7 +211,7 @@ c-à-d : On peut pas se fier uniquement à la validation côté client pour gara
 But we know that if the data is invalid, we don't want to proceed with the form submission
 so we can simply throw an error which we can handle that
 
-[invariantResonse](inkdrop://note/h5AdFHG3i)
+
 
 ```ts
 export async function action({ request, params }: DataFunctionArgs) {

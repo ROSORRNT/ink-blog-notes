@@ -81,8 +81,7 @@ But we can do a bit better for the UX of these kinds of errors...
 🦉 As mentioned earlier, Remix allows you to `throw new Response` from your loaders and actions so you can control the status code and other information *sent in the response*
 
  For example:
- 
-![clipboard.png](ckEu5iLFF-clipboard.png)
+
 
 > We've got a handy `invariantResponse` that we use for send responses +easy et fonctionne pareil, mais pour être sûr que l'exemple parle à tout le monde, la plupart des exemples renvoient des response "brutes".
 
