@@ -3,9 +3,8 @@ import "@/styles/globals.css"
 import Footer from "@/components/Footer.astro"
 import TopNavigation from "@/components/TopNavigation.astro"
 import CoursesNavigation from "@/components/CoursesNavigation"
-import { ewdCourses } from "../data/data"
-import { femCourses } from "../data/data"
-import { eggCourses } from "../data/data"
+import { ewdCourses, femCourses, eggCourses } from "../data/data"
+import { courses } from "../data/data"
 ---
 
 <html lang="en">
@@ -27,18 +26,20 @@ import { eggCourses } from "../data/data"
       <div class="flex justify-center">
         <CoursesNavigation
           client:load
-          courses={ewdCourses}
+          courses={courses.ewdCourses}
           title="Epic Web Dev"
         />
         <CoursesNavigation
           client:load
-          courses={femCourses}
+          courses={courses.femCourses}
           title="Frontend Masters"
         />
-        <CoursesNavigation client:load courses={eggCourses} title="Egghead.io" />
+        <CoursesNavigation
+          client:load
+          courses={courses.eggCourses}
+          title="Egghead.io"
+        />
       </div>
-
-      <!-- <Button variant="destructive" >Hello World</Button> -->
 
       <Footer />
     </main>

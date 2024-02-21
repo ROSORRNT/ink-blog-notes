@@ -17,6 +17,7 @@ type Course = {
 }
 
 export default function CoursesNavigation({ courses, title }: { courses: Course[], title: string }) {
+  // getImageUrls()
   return (
 
     <NavigationMenu>

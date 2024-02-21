@@ -1,18 +1,21 @@
 ---
-const ancorClasses = "text-gray-900 hover:text-milan-900 font-extralight text-2xl";
+const ancorClasses =
+  "text-gray-900 hover:text-milan-900 font-extralight text-2xl"
+import { animalImagesUrl } from "../data/data"
+
 ---
 
 <nav class="flex items-center justify-between p-4 bg-gray-100 text-milan-100">
-<span
- class=" bg-mardi-gras-50 rounded-full "
->
-  <a href="/">
-    <img src="/owl.png" alt="logo" class="h-16 rounded-md" />
-  </a>
-</span>
+  <span class="bg-mardi-gras-50 rounded-full">
+    <a href="/">
+      <img
+        src={animalImagesUrl["owl"]}
+        class="h-16 rounded-md"
+      />
+    </a>
+  </span>
   <div class="flex space-x-4">
     <a href="/about/" class={ancorClasses}>Concept</a>
     <a href="/blog/" class={ancorClasses}>Blog</a>
-  
   </div>
 </nav>
