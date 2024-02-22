@@ -1,47 +1,27 @@
 ---
-import "@/styles/globals.css"
-import Footer from "@/components/Footer.astro"
-import TopNavigation from "@/components/TopNavigation.astro"
-import CoursesNavigation from "@/components/CoursesNavigation"
-import { ewdCourses, femCourses, eggCourses } from "../data/data"
-import { courses } from "../data/data"
+import CoursesNavigation from '@/components/CoursesNavigation';
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { courses } from '@/data/data';
+const pageTitle = "Journal d'apprentissage";
 ---
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Ink Notes</title>
-  </head>
-  <body>
-    <TopNavigation />
-    <h1 class="px-8">Journal d'Apprentissage</h1>
-
-    <main class="flex flex-col h-[60vh] justify-between">
-      <h2>
-        <span class="px-8">Ressources principales</span>
-      </h2>
-      <div class="flex justify-center">
-        <CoursesNavigation
-          client:load
-          courses={courses.ewdCourses}
-          title="Epic Web Dev"
-        />
-        <CoursesNavigation
-          client:load
-          courses={courses.femCourses}
-          title="Frontend Masters"
-        />
-        <CoursesNavigation
-          client:load
-          courses={courses.eggCourses}
-          title="Egghead.io"
-        />
-      </div>
-
-      <Footer />
-    </main>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <main class="flex flex-col h-[40vh] justify-between">
+    <div class="flex justify-center">
+      <CoursesNavigation
+        client:load
+        courses={courses.ewdCourses}
+        title="Epic Web Dev"
+      />
+      <CoursesNavigation
+        client:load
+        courses={courses.femCourses}
+        title="Frontend Masters"
+      />
+      <CoursesNavigation
+        client:load
+        courses={courses.eggCourses}
+        title="Egghead.io"
+      />
+    </div>
+  </main>
+</BaseLayout>
