@@ -1,14 +1,20 @@
 ---
-import Resources from "@/components/LearningResources.astro"
+import type { BlogResource } from "@/types/types"
+
+const blogs: BlogResource[] = [
+  { name: "John Lindquist", url: "https://johnlindquist.com/" },
+  { name: "Artem Zakharchenko", url: "https://kettanaito.com/" },
+  { name: "Josh Comeau", url: "https://www.joshwcomeau.com/" },
+  { name: "Articles - E-W-D", url: "https://www.epicweb.dev/articles" },
+]
 ---
 
 <footer
-  class="flex justify-center items-center bg-gray-100 py-4 mx-6 mt-12 rounded-md"
+  class="flex justify-center items-center bg-gray-100 py-4 mx-6 mt-12 mb-8 rounded-md"
 >
-  <p class="text-milan-950 text-md font-light tracking-wide leading-6">
-    Favorite learning resources :
-    <Resources platform={"epicweb"} extension="dev" displayName="Epic Web Dev" />
-    <Resources platform={"frontendMasters"} extension="com" displayName="Frontend Masters" />
-    <Resources platform={"egghead"} extension="io" displayName="Egghead" />
-  </p>
+  <div>
+    <p class="text-milan-950 text-md font-light tracking-wide leading-6">
+      Other Blogs :
+    </p>
+  </div>
 </footer>
