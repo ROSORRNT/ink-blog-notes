@@ -1,14 +1,35 @@
 ---
 import "@/styles/globals.css"
-import Carousel from "@/components/Carousel"
 import BaseLayout from "@/layouts/BaseLayout.astro"
+import { animalPrefix } from "@/data/data"
 const pageTitle = "Concept"
+
+function getImages() {
+  return animalPrefix.map((prefix) => {
+    return `https://raw.githubusercontent.com/ROSORRNT/img-data/main/animals/${prefix}.png`
+  })
+}
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class="flex flex-col  h-[50vh] items-center justify-center  ">
-    <div class="mx-28 ">
-      <Carousel />
-    </div>
+  <div class="grid min-h-[50vh] place-items-center">
+    <ul class="flex gap-4 w-full max-w-2xl">
+      {
+        [...Array(4).keys()].map((_, index) => (
+          <li class="bg-mardi-gras-200 h-[250px] w-full rounded-2xl relative overflow-hidden ">
+            <img
+              class="absolute h-full w-full inset-0 object-scale-down"
+              src={getImages()[index]}
+            />
+            <div class="absolute inset-x-0 bottom-0 py-1 text-center">
+              <h2 class="text-md font-medium text-white">
+                The card title 
+              </h2>
+          
+            </div>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </BaseLayout>

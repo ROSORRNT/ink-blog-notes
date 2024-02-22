@@ -1,7 +1,5 @@
 ---
 import "@/styles/globals.css"
-import { courses } from "@/data/data"
-import CoursesNavigation from "@/components/CoursesNavigation"
 import BaseLayout from "@/layouts/BaseLayout.astro"
 const pageTitle = "Resources"
 ---
@@ -9,21 +7,11 @@ const pageTitle = "Resources"
 <BaseLayout pageTitle={pageTitle}>
   <main class="flex flex-col h-[60vh] justify-between">
     <div class="flex justify-center">
-      <CoursesNavigation
-        client:load
-        courses={courses.ewdCourses}
-        title="Epic Web Dev"
-      />
-      <CoursesNavigation
-        client:load
-        courses={courses.femCourses}
-        title="Frontend Masters"
-      />
-      <CoursesNavigation
-        client:load
-        courses={courses.eggCourses}
-        title="Egghead.io"
-      />
+
+      <div class="flex flex-col items-center">
+        <h1 class="text-4xl font-bold mb-4">Other Blogs I read</h1>
+        <p class="text-center">Here are some resources that I have found useful in my journey as a developer. I hope you find them useful too.</p>
+      </div>
     </div>
   </main>
 </BaseLayout>

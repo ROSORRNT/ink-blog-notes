@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro"
 const { frontmatter } = Astro.props
-
+// add a select compoent 
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props
   <!-- <p>{frontmatter.pubDate.toString().slice(0,10)}</p> -->
   <!-- <p><em>{frontmatter.description}</em></p> -->
   <!-- <img src={frontmatter.image.url} width="150" alt={frontmatter.image.alt} /> -->
-  <main class="flex items-center" >
+  <main id="main-workshop" class="flex items-center justify-around" >
     <slot />
   </main>
 </BaseLayout>

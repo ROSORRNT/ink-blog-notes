@@ -1,27 +1,44 @@
 ---
-import CoursesNavigation from '@/components/CoursesNavigation';
-import BaseLayout from '../layouts/BaseLayout.astro'
-import { courses } from '@/data/data';
-const pageTitle = "Journal d'apprentissage";
+import CoursesNavigation from "@/components/CoursesNavigation"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import { learningResources } from "@/data/data"
+const pageTitle = "Journal d'apprentissage"
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-  <main class="flex flex-col h-[40vh] justify-between">
+  <main class="flex flex-col justify-between">
     <div class="flex justify-center">
-      <CoursesNavigation
-        client:load
-        courses={courses.ewdCourses}
-        title="Epic Web Dev"
-      />
-      <CoursesNavigation
-        client:load
-        courses={courses.femCourses}
-        title="Frontend Masters"
-      />
-      <CoursesNavigation
-        client:load
-        courses={courses.eggCourses}
-        title="Egghead.io"
-      />
+      <div class="grid grid-cols-3 gap-4">
+        {
+          learningResources
+            .slice(0, 3)
+            .map((resource) => (
+              <CoursesNavigation
+                client:load
+                courses={resource.courses}
+                title={resource.displayName}
+              />
+            ))
+        }
+      </div>
+    </div>
+  
+    <div class="flex justify-center mt-6">
+      <div class="grid grid-cols-3 gap-4 z-0">
+        {
+          learningResources
+            .slice(3, 6)
+            .map((resource) => (
+              <CoursesNavigation
+                client:load
+                courses={resource.courses}
+                title={resource.displayName}
+           
+              
+              />
+            ))
+        }
+      </div>
     </div>
   </main>
 </BaseLayout>
