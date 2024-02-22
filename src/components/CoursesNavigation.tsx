@@ -1,3 +1,4 @@
+import type { Course } from "@/types/types"
 
 import {
   NavigationMenu,
@@ -10,22 +11,14 @@ import {
   NavigationMenuViewport,
 } from "./ui/navigation-menu"
 
-type Course = {
-  title: string
-  href?: string
-  url?: string
-}
-
 export default function CoursesNavigation({ courses, title }: { courses: Course[], title: string }) {
-  // getImageUrls()
-  return (
 
+  return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>{title}</NavigationMenuTrigger>
-          <NavigationMenuContent>
-
+          <NavigationMenuContent >
             {courses.map((course) => (
               <NavigationMenuItem key={course.title} className="hover:bg-chinook-50 px-4 py-2 block text-left ">
                 {
@@ -37,7 +30,6 @@ export default function CoursesNavigation({ courses, title }: { courses: Course[
                     </a>
                   )
                 }
-
               </NavigationMenuItem>
             ))}
 
