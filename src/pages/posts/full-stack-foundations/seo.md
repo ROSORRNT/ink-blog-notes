@@ -1,3 +1,7 @@
-# Search Engine Optimisation
+---
+layout: ../../../layouts/MarkdownCourseLayout.astro
+title: 'Search Engine Optimisation'
+tags: [""]
+---
 
-[Back to Full Stack Foundation](/posts/full-stack-foundations)
+[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)

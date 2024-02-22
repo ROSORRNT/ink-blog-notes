@@ -1,8 +1,10 @@
-# Error Handling 
+---
+layout: ../../../layouts/MarkdownCourseLayout.astro
+title: 'Error Handling '
 
-[Back to Full Stack Foundation](/posts/full-stack-foundations)
+---
 
-# Error Handling
+[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)
 
 # Intro
 

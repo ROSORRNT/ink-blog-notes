@@ -1,10 +1,17 @@
-# Styling
+---
+layout: ../../../layouts/MarkdownCourseLayout.astro
+title: 'Styling'
+author: 'Some learner on the web'
+image:
+    url: 'https://raw.githubusercontent.com/ROSORRNT/img-data/main/animals/owl.png'
+    alt: 'owl.'
+tags: ["astro", "blogging", "learning in public"]
+---
 
-[Back to Full Stack Foundation](/posts/full-stack-foundations)
+[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)
 
 # Links to Public Files
 [links remix doc](https://remix.run/docs/en/main/route/links ) :
-
 
 ````js
 export const links: LinksFunction = () => {...}
@@ -79,8 +86,6 @@ export default function App() {
 
 # Asset Import
 
-  [Todo : Course link](https://www.epicweb.dev
-  
 [Asset Import Remix Doc](https://remix.run/docs/en/main/file-conventions/remix-config#assetsbuilddirectory)
 
 # Global Styles

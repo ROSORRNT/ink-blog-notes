@@ -1,10 +1,16 @@
-# Routing
+---
+layout: ../../../layouts/MarkdownCourseLayout.astro
+title: 'Routing'
+tags: [""]
+---
 
-[Back to Full Stack Foundation](/posts/full-stack-foundations)
+[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)
 
-## Intro
+[Remix.run Routing Page](https://remix.run/docs/en/main/discussion/routes)
 
-###  Le web
+# Intro
+
+##  Le web
 
 Uniform Resource Locator
 * 📜 [What is a URL](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL)
@@ -45,7 +51,7 @@ Assuming a route like `routes/posts/$postId.tsx` is **matched** by `/posts/123` 
 * the bit after the `?` : "query params" or "search params."
 
 
-### Navigation
+## Navigation
 
 To navigate around the web, we use `<a>` tags ("a" is short for "anchor", please don't ask why it's not called "link" 🤷‍♂️). For example, si on veut créer un lien vers la page de profil de l'utilisateur :
 
@@ -66,14 +72,14 @@ Ca prendra la valeur de l'input et l'ajoutera à l'URL en tant que query params 
 
    **Attribut `action`** : La valeur de l'attribut `action` (e.g "/users/search"), indique au navigateur où envoyer les données récupérées quand le formulaire est submit.
    
-####    In remix
+##    In remix
 
 Pour faciliter la navigation, Remix fournit [un component `<Link>`](https://remix.run/docs/en/main/components/link) => créer des liens ( `<a>`) vers d'autres pages de votre app sans déclencher de refresh de la page.
 
 Remix dispose également d'un composant intégré [`<Form>`](https://remix.run/docs/en/main/components/form)qui améliore la gestion des formulaires par le navigateur. 
 
 
-### Routers
+# Routers
 
 Most web applications use what is called a *"router"* **to associate specific code with the URL segment**.
 
@@ -189,7 +195,7 @@ export default function Child() {
 	return <h2>Child</h2>
 }
 ```
-### Resume 
+## Resume 
 
 Your best friend is the `npx remix routes` command which will help you figure out how your routes are structured based on your file structure.
 
@@ -200,7 +206,7 @@ The key concepts are:
 
 Once you nail those two concepts, then routing in Remix will be much more straightforward.
 
-## Resource Routes
+# Resource Routes
 
 🦉 So far, every HTTP request we make to our app's routes *will result in UI*:
 
@@ -252,7 +258,7 @@ And you can send *any* response you like. We're sending a plaintext response, bu
 
 Also, Remix doesn't care whether you export anything else in your resource route either. I've taken advantage of this by exporting functions and components that use the resource route directly in the same file. This level of colocation is brilliant. Feel free to read more about this on [EpicWeb.dev](https://epicweb.dev/) in ["Full Stack Components"](https://www.epicweb.dev/full-stack-components).
 
-## Route Module Exports
+# Route Module Exports
 
 There are a number of things we can export from each of these routes. You will recall from the last exercise that we exported a `links` function from the 
 
