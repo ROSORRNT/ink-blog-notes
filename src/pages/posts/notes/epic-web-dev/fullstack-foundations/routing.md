@@ -1,10 +1,10 @@
 ---
-layout: ../../../layouts/MarkdownCourseLayout.astro
+layout: ../../../../../layouts/MarkdownCourseLayout.astro
 title: 'Routing'
 tags: [""]
 ---
 
-[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)
+[Back to Full Stack Foundation](/posts/workshop-resume/fullstack-foundations)
 
 [Remix.run Routing Page](https://remix.run/docs/en/main/discussion/routes)
 
@@ -275,7 +275,7 @@ Remix also has the ability to preload everything in our links if we want to prel
 
 # Essential Links 
 
-[Routing page](https://remix.run/docs/en/main/discussion/routes)
+[Back to Full Stack Foundation](/posts/workshop-resume/epic-web-dev/full-stack-foundations)
 
 # Flat Routes Convention 
 

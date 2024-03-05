@@ -1,0 +1,10 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <main id="main-workshop" class="flex flex-col items-center justify-around" >
+    <slot />
+  </main>
+</BaseLayout>

@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/MarkdownCourseLayout.astro
+layout: ../../../../../layouts/MarkdownCourseLayout.astro
 title: 'Styling'
 author: 'Some learner on the web'
 image:
@@ -8,7 +8,7 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)
+[Back to Full Stack Foundation](/posts/workshop-resume/epic-web-dev/fullstack-foundations)
 
 # Links to Public Files
 [links remix doc](https://remix.run/docs/en/main/route/links ) :

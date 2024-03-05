@@ -1,10 +1,10 @@
 ---
-layout: ../../../layouts/MarkdownCourseLayout.astro
+layout: ../../../../../layouts/MarkdownCourseLayout.astro
 title: 'Data Mutations'
 tags: [""]
 ---
 
-[Back to Full Stack Foundation](/posts/workshop-resume/full-stack-foundations)
+[Back to Full Stack Foundation](/posts/workshop-resume/epic-web-dev/fullstack-foundations)
 
 # Data Mutations
 

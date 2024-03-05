@@ -1,0 +1,24 @@
+---
+import "@/styles/globals.css"
+import BaseLayout from "@/layouts/BaseLayout.astro"
+const pageTitle = "Topics"
+import { topicsTitle } from "@/data/topics"
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="container mx-auto px-4">
+    <a href="/posts/index-topics">Topics Index</a>
+    <ul class="flex flex-wrap justify-center">
+      {
+        topicsTitle.map((topic) => (
+          <li
+            class="bg-white shadow rounded-full p-4 m-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 
+          cursor-pointer hover:bg-chinook-900 hover:text-chinook-50 hover:border-2 hover:border-milan-200 "
+          >
+            <span class="text-lg font-semibold">{topic.title}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>
