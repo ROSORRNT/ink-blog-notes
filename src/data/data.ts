@@ -21,15 +21,15 @@ export const learningResources: LearningResource[] = [
     courses: [
       {
         title: "Full Stack Foundations",
-        href: "/posts/workshop-resume/full-stack-foundations",
+        href: "/posts/workshop-resume/epic-web-dev/fullstack-foundations",
       },
       {
         title: "Web Form",
-        href: "/posts/workshop-resume/web-form",
+        href: "/posts/workshop-resume/epic-web-dev/web-form",
       },
       {
         title: "Data Modeling",
-        href: "/posts/workshop-resume/data-modeling",
+        href: "/posts/workshop-resume/epic-web-dev/data-modeling",
       },
     ]
   },
@@ -125,7 +125,6 @@ export const learningResources: LearningResource[] = [
   }
 
 ];
-
 
 export const animalPrefix = [
   "ai",
